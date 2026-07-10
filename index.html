@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Detecting Suspicious Activity in the NFT Ecosystem using Temporal Graph Analysis">
+  <meta name="keywords" content="HSTforU, HSTforU">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png"
+          href="https://img.icons8.com/ios-filled/50/combo-chart.png">
+  <title>Detecting Suspicious Activity in the NFT Ecosystem using Temporal Graph Analysis</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECQJZZNYSB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ECQJZZNYSB');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Detecting Suspicious Activity in the NFT Ecosystem using Temporal Graph Analysis</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/wassim-sliti-72b080187/">Wassim Sliti</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/felixcuadradolatasa/">Félix Cuadrado</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/leandro-campos-hernaez/">Leandro Campos Hernáez</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/juancarlosduenas/">Juan Carlos Dueñas</a><sup></sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Real time systems and telematic services architecture Research Group</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Information Processing and Telecommunications Center (IPTC), Universidad Politécnica de Madrid, Av. Complutense, 30, Moncloa - Aravaca, 28040 Madrid, Spain</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://doi.org/10.1109/TNSE.2026.3684082"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/slitiWassim/NFT-Suspicious-Activity"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://drive.upm.es/s/sLgeSrNxMEzXaEB?openfile=true"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Illicit activities and coordinated manipulations in the Non-Fungible Tokens (NFT) market remain significant concerns, driven by the pseudonymous and publicly transparent nature of blockchain transactions and the lack of market oversight. In this study, we introduce a novel framework for detecting suspicious behavior in NFT trading ecosystems through temporal graph analysis. Our approach represents the market as a large-scale, time-evolving transactional graph, capturing realistic market dynamics and the complex interactions between traders. By leveraging temporal knowledge graphs, we track not only connections between traders but also the evolution of these interactions over time, including their sequence, rhythm, and frequency, enabling the identification of illicit or anomalous behaviors that static graph representations cannot reveal. Using an optimized temporal cycle-detection algorithm, we extract connected groups of wallets for in-depth behavioral analysis, uncovering patterns indicative of unusual or coordinated manipulation. To overcome the absence of labeled ground-truth validation data, we employ a temporal motif–based validation, demonstrating that flagged entities exhibit trading behaviors significantly deviating from standard market dynamics. Our results highlight the potential of temporal graph–based methodologies to enhance surveillance, risk detection, and regulatory oversight in decentralized NFT markets.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="">
+       <img src="./static/images/framework_TKG.jpg"  > 
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Temporal Cycles Detection</h3>
+    <div class="columns is-centered">
+
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+
+            <img src="./static/images/temporal_cycles.png" height="80%" > 
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+  <div class="container is-centered is-max-desktop">
+    <div class="columns is-centered">
+
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column is-centered">
+        <h2 class="title is-4">Temporal Cycles Detected</h2>
+        <div class="columns is-centered">
+          <div class="column content has-text-justified">
+            <p>
+            Temporal cycle counts for nodes in the NFT graph
+with δ = 24 hours and L = 15. The plot shows the
+total number of temporal cycles versus the total number
+of transactions (incoming and outgoing). Nodes are colored
+according to wallet balance (total incoming minus total
+outgoing transaction value). All axes and the color scale are
+logarithmic.However, this relationship varies by many orders
+of magnitude and is highly heterogeneous. For example,
+a node with around 1,000 transactions may participate in
+fewer than 10 cycles, while another node with the same
+transaction count may participate in up to 10<sup>6</sup> cycles.
+            </p>
+            <style>
+            .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;}
+            </style>
+
+           <img src="./static/images/transaction_Vs_Cycles_.png" class="center-image">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+    <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      
+      <!--/ Visual Effects. -->
+      <div class="column">
+
+        <div class="content">
+          <h4 class="title is-4">CCDF Cycles Duration</h4>
+            <img src="./static/images/ccdf_cycle_duration.png" > 
+        </div>
+      </div>
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-4"> CCDF Cycles Length</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/ccdf_cycle_length.png" > 
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <p>
+      These plots present the Complementary Cumulative Distribution Functions (CCDFs) of both cycle length and cycle duration, highlighting the distribution, frequency, and relative prevalence of trading  temporal cycle detected.
+    </p>
+    <!--/ Matting. -->
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Suspicious Activity Detection</h3>
+
+    <div class="columns is-centered">
+      
+      <!--/ Visual Effects. -->
+      <div class="column">
+
+        <div class="content">
+          <h4 class="title is-4">Automated Trading</h4>
+
+          <img src="./static/images/automated_trading_upset.png" >
+        </div>
+      </div>
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-4">Wash Trading</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+
+            <img src="./static/images/wash_trading_upset.png" >
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Temporal Motif-based Characterization</h3>
+    <div class="columns is-centered">
+
+      <!--/ Visual Effects. -->
+      <div class="column">
+
+        <div class="content">
+          <h4 class="title is-4">Suspicious Wash Traders</h4>
+          <img src="./static/images/motifs_ratio_60_xy.png" >
+        </div>
+      </div>
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-4">Suspicious Automated Traders</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/motifs_ratio_wash_traders_1d_xy.png" >
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  <p>Heatmap showing, for each motif type, the ratio of motifs found in flagged suspicious wallets to those observed in normal wallets. This ratio quantifies how much more (or less) frequently each motif occurs in these flagged wallets compared to the baseline trading population, highlighting the atypical trading behavior they exhibit.</p>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Acknowledgements</h2>
+
+        <p>
+        This work was carried out within the STRAST Research Group at the Information Processing and Telecommunications Center (IPTC), Universidad Politécnica de Madrid, as part of the <a href="https://cedar-heu-project.eu/">CEDAR</a>  project, funded by the Horizon Europe Programme (Grant Agreement No. 101135577).         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        
+
+         <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+
+        <div class="content">
+          <img src="./static/images/UPM.png" height="100%" width="100%">
+          
+        </div>
+      </div>
+      <div class="column">
+
+        <div class="content">
+          <img src="./static/images/logo_iptc_sq_color.png" height="55%" width="55%">
+          
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{sliti2026detecting,
+  title={Detecting Suspicious Activity in the NFT Ecosystem Using Temporal Graph Analysis},
+  author={Sliti, Wassim and Cuadrado, F{\'e}lix and Hern{\'a}ez, Leandro Campos and Due{\~n}as, Juan C},
+  journal={IEEE Transactions on Network Science and Engineering},
+  year={2026},
+  publisher={IEEE}
+}</code></pre>
+  </div>
+</section>
+
+
+  
+  <div  class="content has-text-centered">                    
+     <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=230&t=n&d=Ti8_HsdNIgiVThOEACLUySU2z5Kl4rAkNQ1zXrG5OGA'></script>
+  </div>    
+  
+
+</body>
+</html>

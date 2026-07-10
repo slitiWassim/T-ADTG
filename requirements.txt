@@ -1,0 +1,13 @@
+tqdm
+pandas 
+numpy
+pyarrow==20.0.0
+distinctipy
+raphtory==0.16.2
+typing
+more-itertools
+collection
+logging
+matplotlib
+seaborn
+argparse
