@@ -1,31 +1,25 @@
 # A Time-Aware Self-Supervised Framework for Anomaly Detection in Temporal Graphs
 This is the code for **[A Time-Aware Self-Supervised Framework for Anomaly Detection in Temporal Graphs](https://github.com/slitiWassim/NFT-Suspicious-Activity)** .
 
-### [Project](https://slitiwassim.github.io/NFT-Suspicious-Activity/) | [Dataset](https://drive.upm.es/s/sLgeSrNxMEzXaEB?openfile=true) | [Paper]()
- 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch 1.13](https://img.shields.io/badge/PyTorch-1.13-orange.svg)](https://pytorch.org/)
+[![PyTorch Geometric 2.6](https://img.shields.io/badge/PyG-2.6-purple.svg)](https://pytorch.org/)
+
+### [🌐 Project](https://slitiwassim.github.io/T-ADTG/) | [💾 Dataset](https://drive.upm.es/s/sLgeSrNxMEzXaEB?openfile=true) | [📄 Paper]()
 
 
 <p align="center">
   <a href="static/images/paper_.png" target="_blank">
     <img
       src="static/images/paper_.png"
-      width="70%"
+      width="90%"
       style="border: 2px solid rgb(201, 196, 196);"
     >
   </a>
 </p>
 
-## Framework Overview
 
-<p align="center">
-  <a href="static/images/T-ADTG.png" target="_blank">
-    <img
-      src="static/images/T-ADTG.png"
-      width="100%"
-      style="border: 2px solid rgb(201, 196, 196);"
-    >
-  </a>
-</p>
 
 ## Setup
 The code can be run under any environment with Python 3.9.25 and above.
@@ -43,23 +37,31 @@ Install the required packages:
     pip install -r requirements.txt
   
 
+## Framework Overview
+
+<p align="center">
+  <a href="static/images/T-ADTG.png" target="_blank">
+    <img
+      src="static/images/T-ADTG.png"
+      width="100%"
+      style="border: 2px solid rgb(201, 196, 196);"
+    >
+  </a>
+</p>
+
 
 We evaluate `T-ADTG` on:
 | Dataset | Link                                                                                  |
 |--|---------------------------------------------------------------------------------------|
-| UCSD Ped2 | [![Google drive](https://badgen.net/static/Homepage/Ped2/blue)](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html) |
-| CUHK Avenue | [![Google drive](https://badgen.net/badge/Homepage/Avenue/cyan)](http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html) |
-| ShanghaiTech | [![Google drive](https://badgen.net/badge/Homepage/ShanghaiTech/green?)](https://svip-lab.github.io/dataset/campus_dataset.html) |
-| Drone-Anomaly | [![Google drive](https://badgen.net/badge/Homepage/Drone-Anomaly/yellow)](https://www.kaggle.com/datasets/dayaalex/drone-anomaly)|
-| Drone-Anomaly | [![Google drive](https://badgen.net/badge/Homepage/Drone-Anomaly/yellow)](https://www.kaggle.com/datasets/dayaalex/drone-anomaly)|
-| Drone-Anomaly | [![Google drive](https://badgen.net/badge/Homepage/Drone-Anomaly/yellow)](https://www.kaggle.com/datasets/dayaalex/drone-anomaly)|
+| Wikipedia | [![Google drive](https://badgen.net/static/Homepage/Wikipedia/blue)](https://snap.stanford.edu/jodie/) |
+|  Mooc | [![Google drive](https://badgen.net/badge/Homepage/Mooc/cyan)](https://snap.stanford.edu/jodie/) |
+| Bitcoin-Alpha  | [![Google drive](https://badgen.net/badge/Homepage/Bitcoin-Alpha/orange?)](https://snap.stanford.edu/data/soc-sign-bitcoin-alpha.html) |
+| Bitcoin-OTC  | [![Google drive](https://badgen.net/badge/Homepage/Bitcoin-OTC/orange)](https://snap.stanford.edu/data/soc-sign-bitcoin-otc.html)|
+| Amazon | [![Google drive](https://badgen.net/badge/Homepage/Amazon/yellow)](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)|
 
 
 
 
-<p align="center">
-<b>Figure.</b> Mean ROC curves of <b>T-ADTG</b> on the five benchmark datasets, averaged over 10 runs. Each panel reports the mean AUROC and its standard deviation, with the diagonal indicating random performance.
-</p>
 
 
 A dataset is a directory with the following structure:
@@ -77,39 +79,25 @@ A dataset is a directory with the following structure:
   ```
 
 
-
-### Data description
-| Descriptions | Statistics                                                                                  |
-|--|---------------------------------------------------------------------------------------|
-|Start date(dd-mm-yyyy,UTC) | 23-06-2017 21:05 |
-|End date (dd-mm-yyyy, UTC)| 22-12-2023 19:06 |
-|Number of NFT collections | 1,746,379 |
-|Number of NFT tokens |41,292,572 |
-|Number of account addresses| 7,062,831 |
-|Number of transactions |76,300,244  |
-|Chains | 10 |
-
-
-
 ## Baselines
 
-| Baseline | Paper | Code |
-|----------|-------|------|
-| Radar | [Paper](https://paper-link) | [Code](https://code-link) |
-| DOMINANT | [Paper](https://paper-link) | [Code](https://code-link) |
-| GDN | [Paper](https://paper-link) | [Code](https://code-link) |
-| SemiGNN | [Paper](https://paper-link) | [Code](https://code-link) |
-| F-FADE | [Paper](https://paper-link) | [Code](https://code-link) |
-| NetWalk | [Paper](https://paper-link) | [Code](https://code-link) |
-| AddGraph | [Paper](https://paper-link) | [Code](https://code-link) |
-| DyRep | [Paper](https://paper-link) | [Code](https://code-link) |
-| TADDY | [Paper](https://paper-link) | [Code](https://code-link) |
-| JODIE | [Paper](https://paper-link) | [Code](https://code-link) |
-| TGAT | [Paper](https://paper-link) | [Code](https://code-link) |
-| TGN | [Paper](https://paper-link) | [Code](https://code-link) |
-| SAD | [Paper](https://paper-link) | [Code](https://code-link) |
-| SLADE | [Paper](https://paper-link) | [Code](https://code-link) |
-| MHisCL | [Paper](https://paper-link) | [Code](https://code-link) |
+| **Baseline** |  **Paper** |  **Code** |
+|----------|:--------:|:--------------------------------------------------------------:|
+| **Radar** | <a href="https://www.ijcai.org/proceedings/2017/0299.pdf"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://docs.pygod.org/en/latest/generated/pygod.detector.Radar.html"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **DOMINANT** | <a href="https://epubs.siam.org/doi/10.1137/1.9781611975673.67"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://docs.pygod.org/en/latest/generated/pygod.detector.DOMINANT.html"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **GDN** | <a href="https://dl.acm.org/doi/10.1145/3442381.3449922"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/kaize0409/Meta-GDN_AnomalyDetection/tree/main"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **SemiGNN** | <a href="https://ieeexplore.ieee.org/document/8970829"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/safe-graph/DGFraud/tree/master"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **F-FADE** | <a href="https://dl.acm.org/doi/10.1145/3437963.3441806"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/snap-stanford/F-FADE"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **NetWalk** | <a href="https://dl.acm.org/doi/10.1145/3219819.3220024"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/chengw07/NetWalk"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **AddGraph** | <a href="https://www.ijcai.org/proceedings/2019/614"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/Ljiajie/Addgraph"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **DyRep** | <a href="https://openreview.net/pdf?id=HyePrhR5KX"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/twitter-research/tgn/tree/master"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **TADDY** | <a href="https://ieeexplore.ieee.org/document/9599560/"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/yuetan031/TADDY_pytorch/tree/main"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **JODIE** | <a href="https://dl.acm.org/doi/10.1145/3292500.3330895"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/twitter-research/tgn/tree/master"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **TGAT** | <a href="https://openreview.net/forum?id=rJeW1yHYwH"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/StatsDLMathsRecomSys/Inductive-representation-learning-on-temporal-graphs"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **TGN** | <a href="https://arxiv.org/abs/2006.10637"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/twitter-research/tgn/tree/master"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **SAD** | <a href="https://www.ijcai.org/proceedings/2023/256"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/D10Andy/SAD"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **SLADE** | <a href="https://dl.acm.org/doi/pdf/10.1145/3637528.3671845"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/jhsk777/SLADE"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
+| **MHisCL** | <a href="https://doi.org/10.1016/j.knosys.2025.113049"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/Yun-Fu/MHisCL"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
 
 
 ## Training
@@ -144,7 +132,9 @@ python train.py \
   <img src="static/images/Bitcoin_otc_curve.png" width="30%">
   <img src="static/images/Amazon_AUROC_curve.png" width="30%">
 </p>
-
+<p align="center">
+Mean ROC curves of <b>T-ADTG</b> on the five benchmark datasets, averaged over 10 runs. Each panel reports the mean AUROC and its standard deviation.
+</p>
 
 ## Citing
 If you find our work useful, please consider citing:
