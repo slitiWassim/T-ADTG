@@ -1,12 +1,12 @@
 # A Time-Aware Self-Supervised Framework for Anomaly Detection in Temporal Graphs
 This is the code for **[A Time-Aware Self-Supervised Framework for Anomaly Detection in Temporal Graphs](https://github.com/slitiWassim/NFT-Suspicious-Activity)** .
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch 1.13](https://img.shields.io/badge/PyTorch-1.13-orange.svg)](https://pytorch.org/)
+[![PyTorch 2.4](https://img.shields.io/badge/PyTorch-1.13-orange.svg)](https://pytorch.org/)
 [![PyTorch Geometric 2.6](https://img.shields.io/badge/PyG-2.6-purple.svg)](https://pytorch.org/)
 
-### [🌐 Project](https://slitiwassim.github.io/T-ADTG/) | [💾 Dataset](https://drive.upm.es/s/sLgeSrNxMEzXaEB?openfile=true) | [📄 Paper]()
+### [🌐 Project](https://slitiwassim.github.io/T-ADTG/) | [📄 Paper]()
 
 
 <p align="center">

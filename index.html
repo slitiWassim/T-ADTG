@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png"
           href="https://img.icons8.com/ios-filled/50/combo-chart.png">
-  <title>Detecting Suspicious Activity in the NFT Ecosystem using Temporal Graph Analysis</title>
+  <title>A Time-Aware Self-Supervised Framework for Anomaly Detection in Temporal Graphs</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECQJZZNYSB"></script>
@@ -44,16 +44,13 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Detecting Suspicious Activity in the NFT Ecosystem using Temporal Graph Analysis</h1>
+          <h1 class="title is-1 publication-title">A Time-Aware Self-Supervised Framework for Anomaly Detection in Temporal Graphs</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://www.linkedin.com/in/wassim-sliti-72b080187/">Wassim Sliti</a><sup></sup>,
             </span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/felixcuadradolatasa/">Félix Cuadrado</a><sup></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/leandro-campos-hernaez/">Leandro Campos Hernáez</a><sup></sup>,
             </span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/juancarlosduenas/">Juan Carlos Dueñas</a><sup></sup>,
@@ -71,7 +68,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://doi.org/10.1109/TNSE.2026.3684082"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -81,7 +78,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/slitiWassim/NFT-Suspicious-Activity"
+                <a href="https://github.com/slitiWassim/T-ADTG"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -90,12 +87,12 @@
                   </a>
               </span>
               <span class="link-block">
-                <a href="https://drive.upm.es/s/sLgeSrNxMEzXaEB?openfile=true"
+                <a href="https://cedar-heu-project.eu/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fas fa-database"></i>
+                      <i class="fas fa-globe"></i>
                   </span>
-                  <span>Dataset</span>
+                  <span>Project</span>
                 </a>
               </span>
               </a>
@@ -127,7 +124,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="">
-       <img src="./static/images/framework_TKG.jpg"  > 
+       <img src="./static/images/paper_.png"  > 
       </div>
     </div>
     <!--/ Paper video. -->
@@ -137,7 +134,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-3">Temporal Cycles Detection</h3>
+    <h3 class="title is-3">Framework Overview</h3>
     <div class="columns is-centered">
 
       <!--/ Visual Effects. -->
@@ -147,7 +144,7 @@
         <div class="columns is-centered">
           <div class="column content">
 
-            <img src="./static/images/temporal_cycles.png" height="80%" > 
+            <img src="./static/images/T-ADTG.png" height="90%" > 
           </div>
 
         </div>
@@ -162,31 +159,24 @@
 
       <!-- Matting. -->
       <div class="column is-centered">
-        <h2 class="title is-4">Temporal Cycles Detected</h2>
+        <h2 class="title is-4">Temporal Rotary Message Encoding (TRME)</h2>
         <div class="columns is-centered">
           <div class="column content has-text-justified">
-            <p>
-            Temporal cycle counts for nodes in the NFT graph
-with δ = 24 hours and L = 15. The plot shows the
-total number of temporal cycles versus the total number
-of transactions (incoming and outgoing). Nodes are colored
-according to wallet balance (total incoming minus total
-outgoing transaction value). All axes and the color scale are
-logarithmic.However, this relationship varies by many orders
-of magnitude and is highly heterogeneous. For example,
-a node with around 1,000 transactions may participate in
-fewer than 10 cycles, while another node with the same
-transaction count may participate in up to 10<sup>6</sup> cycles.
+            <p>llustration of <b>Temporal Rotary Message Encoding (TRME)</b>. Each edge message is partitioned into two-
+dimensional subspaces, and every subspace is rotated by an
+angle proportional to the interaction timestamp, embedding
+continuous-time information directly into the message geome-
+try before neighborhood aggregation.
             </p>
             <style>
             .center-image {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 75%;}
+            width: 85%;}
             </style>
 
-           <img src="./static/images/transaction_Vs_Cycles_.png" class="center-image">
+           <img src="./static/images/TRME.png" class="center-image">
           </div>
 
         </div>
@@ -194,97 +184,89 @@ transaction count may participate in up to 10<sup>6</sup> cycles.
     </div>
     <!--/ Matting. -->
   </div>
-    <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      
-      <!--/ Visual Effects. -->
-      <div class="column">
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Results</h3>
 
-        <div class="content">
-          <h4 class="title is-4">CCDF Cycles Duration</h4>
-            <img src="./static/images/ccdf_cycle_duration.png" > 
+    <div class="columns is-centered">
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/normal.png" alt="Image 1">
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/normal2abnormal.png" alt="Image 2">
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/abnormal2normal.png" alt="Image 3">
+        </figure>
+      </div>
+    </div>
+
+    <div class="content has-text-justified">
+      <p>
+        Illustration of the impact of anomalous nodes on GNN-based representation learning: (a) a normal node connected to normal neighbors, yielding a reliable representation; (b) a normal node influenced by an anomalous neighbor, leading to representation contamination; and (c) an anomalous node surrounded by normal neighbors, resulting in a camouflaged representation that obscures anomalous behavior and reduces discriminative capability.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Results</h3>
+
+    <!-- First Row -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <img src="./static/images/wikipedia_auc_curve_std.png">
         </div>
       </div>
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-4"> CCDF Cycles Length</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./static/images/ccdf_cycle_length.png" > 
-          </div>
 
+      <div class="column">
+        <div class="content has-text-centered">
+          <img src="./static/images/Mooc_AUROC_curve.png">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content has-text-centered">
+          <img src="./static/images/Bitcoin_Alpha_curve.png">
         </div>
       </div>
     </div>
+
+    <!-- Second Row -->
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="content has-text-centered">
+          <img src="./static/images/Bitcoin_otc_curve.png">
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="content has-text-centered">
+          <img src="./static/images/Amazon_AUROC_curve.png">
+        </div>
+      </div>
+    </div>
+
     <p>
-      These plots present the Complementary Cumulative Distribution Functions (CCDFs) of both cycle length and cycle duration, highlighting the distribution, frequency, and relative prevalence of trading  temporal cycle detected.
+      Mean ROC curves of <b>T-ADTG</b> on the five benchmark datasets, averaged over 10 runs.
+      Each panel reports the mean AUROC and its standard deviation.
     </p>
-    <!--/ Matting. -->
   </div>
 </section>
-<section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-3">Suspicious Activity Detection</h3>
-
-    <div class="columns is-centered">
-      
-      <!--/ Visual Effects. -->
-      <div class="column">
-
-        <div class="content">
-          <h4 class="title is-4">Automated Trading</h4>
-
-          <img src="./static/images/automated_trading_upset.png" >
-        </div>
-      </div>
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-4">Wash Trading</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-
-            <img src="./static/images/wash_trading_upset.png" >
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-3">Temporal Motif-based Characterization</h3>
-    <div class="columns is-centered">
-
-      <!--/ Visual Effects. -->
-      <div class="column">
-
-        <div class="content">
-          <h4 class="title is-4">Suspicious Wash Traders</h4>
-          <img src="./static/images/motifs_ratio_60_xy.png" >
-        </div>
-      </div>
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-4">Suspicious Automated Traders</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./static/images/motifs_ratio_wash_traders_1d_xy.png" >
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-  <p>Heatmap showing, for each motif type, the ratio of motifs found in flagged suspicious wallets to those observed in normal wallets. This ratio quantifies how much more (or less) frequently each motif occurs in these flagged wallets compared to the baseline trading population, highlighting the atypical trading behavior they exhibit.</p>
-  </div>
-</section>
-
-
-
 
 
 
@@ -339,20 +321,14 @@ transaction count may participate in up to 10<sup>6</sup> cycles.
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{sliti2026detecting,
-  title={Detecting Suspicious Activity in the NFT Ecosystem Using Temporal Graph Analysis},
-  author={Sliti, Wassim and Cuadrado, F{\'e}lix and Hern{\'a}ez, Leandro Campos and Due{\~n}as, Juan C},
-  journal={IEEE Transactions on Network Science and Engineering},
-  year={2026},
-  publisher={IEEE}
-}</code></pre>
+    <pre><code>The paper has been submitted and is currently under review.</code></pre>
   </div>
 </section>
 
 
   
   <div  class="content has-text-centered">                    
-     <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=230&t=n&d=Ti8_HsdNIgiVThOEACLUySU2z5Kl4rAkNQ1zXrG5OGA'></script>
+     <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=230&t=n&d=TCmBAUEIrbJre5QRBm6XeYR8LXvHhPTAXNqKjcK3Go4'></script> 
   </div>    
   
 
