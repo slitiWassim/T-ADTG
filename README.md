@@ -4,7 +4,7 @@ This is the code for **[A Time-Aware Self-Supervised Framework for Anomaly Detec
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.4](https://img.shields.io/badge/PyTorch-1.13-orange.svg)](https://pytorch.org/)
-[![PyTorch Geometric 2.6](https://img.shields.io/badge/PyG-2.6-purple.svg)](https://pytorch.org/)
+[![PyTorch Geometric 2.6](https://img.shields.io/badge/PyG-2.6-purple.svg)](https://pytorch-geometric.readthedocs.io/en/2.7.0/install/installation.html)
 
 ### [🌐 Project](https://slitiwassim.github.io/T-ADTG/) | [📄 Paper]()
 
@@ -97,7 +97,7 @@ A dataset is a directory with the following structure:
 | **TGN** | <a href="https://arxiv.org/abs/2006.10637"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/twitter-research/tgn/tree/master"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
 | **SAD** | <a href="https://www.ijcai.org/proceedings/2023/256"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/D10Andy/SAD"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
 | **SLADE** | <a href="https://dl.acm.org/doi/pdf/10.1145/3637528.3671845"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/jhsk777/SLADE"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" style="filter: invert(1);"></a> |
-| **MHisCL** | <a href="https://doi.org/10.1016/j.knosys.2025.113049"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/Yun-Fu/MHisCL"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" width="20" ></a> |
+| **MHisCL** | <a href="https://doi.org/10.1016/j.knosys.2025.113049"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="20"></a> | <a href="https://github.com/Yun-Fu/MHisCL"><img src="static/images/github-white.svg" width="28" ></a> |
 
 
 ## Training
