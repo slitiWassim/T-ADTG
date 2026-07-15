@@ -113,7 +113,24 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Illicit activities and coordinated manipulations in the Non-Fungible Tokens (NFT) market remain significant concerns, driven by the pseudonymous and publicly transparent nature of blockchain transactions and the lack of market oversight. In this study, we introduce a novel framework for detecting suspicious behavior in NFT trading ecosystems through temporal graph analysis. Our approach represents the market as a large-scale, time-evolving transactional graph, capturing realistic market dynamics and the complex interactions between traders. By leveraging temporal knowledge graphs, we track not only connections between traders but also the evolution of these interactions over time, including their sequence, rhythm, and frequency, enabling the identification of illicit or anomalous behaviors that static graph representations cannot reveal. Using an optimized temporal cycle-detection algorithm, we extract connected groups of wallets for in-depth behavioral analysis, uncovering patterns indicative of unusual or coordinated manipulation. To overcome the absence of labeled ground-truth validation data, we employ a temporal motif–based validation, demonstrating that flagged entities exhibit trading behaviors significantly deviating from standard market dynamics. Our results highlight the potential of temporal graph–based methodologies to enhance surveillance, risk detection, and regulatory oversight in decentralized NFT markets.
+             Anomaly detection in temporal graphs aims to identify fraudulent users, malicious transactions,
+and other irregular behavior as interaction networks evolve. Two practical realities constrain this
+task. Labeled anomalies are scarce and costly to obtain, and real-world graphs grow to scales
+where many detection methods become computationally infeasible. To address both constraints, we
+propose T-ADTG, a self-supervised framework that requires no anomaly labels and scales near-
+linearly with the number of interactions. T-ADTG treats time as a first-class signal throughout the
+detection pipeline rather than as an auxiliary feature. At the interaction level, Temporal Rotary
+Message Encoding embeds each timestamp directly into the propagated message through a magnitude-
+preserving rotation, while Similarity-Aware Message Aggregation weights neighbors by how similarly
+their behavior has evolved. At the node level, a gated memory module accumulates each node’s
+behavioral trajectory across interactions. A multi-level contrastive objective then enforces consistency
+between a node’s present, its past, and its neighborhood, and deviations from this consistency directly
+yield the anomaly score in a single forward pass. We evaluate T-ADTG on five benchmark datasets
+against fifteen baselines, obtaining the best mean AUROC on every dataset. Despite using no labels, it
+matches or exceeds supervised and semi-supervised methods, and remains effective on a 330K-node
+graph where several static and snapshot-based baselines exhaust memory. These results show that
+accurate, label-free anomaly detection at scale is achievable, precisely in the fraud and abuse settings
+where labels are hardest to obtain.
           </p>
         </div>
       </div>
@@ -176,7 +193,7 @@ try before neighborhood aggregation.
             width: 85%;}
             </style>
 
-           <img src="./static/images/TRME.png" class="center-image">
+           <img src="./static/images/TRME_.png" class="center-image">
           </div>
 
         </div>
