@@ -87,15 +87,14 @@ We evaluate `T-ADTG` on:
 ## Training
 To test `T-ADTG` on a dataset, run:
 ```bash
- python  train.py \
+ python  main.py \
       --cfg <config-file>  \
-      --exp <experiment-name>  \
       --gpu <device-id> 
 ```  
  For example, to test `T-ADTG` on Wikipedia:
 
 ```bash
-python train.py \
+python main.py \
     --cfg src/config/wikipedia.yaml 
 ```
 

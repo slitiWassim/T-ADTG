@@ -1,0 +1,48 @@
+GPUS: [0]
+WORKERS: 16
+
+
+DATASET:
+  NAME: otc
+  ROOT: 'data'
+  NUM_NEIGHBORRS: [15,10]
+  NUM_TIMESLOTS: 20
+  ZERO_EDGE: False
+
+
+TRAIN:
+  BATCH_SIZE_PER_GPU: 128
+  SHUFFLE: True
+  EPOCH: 10
+  OPTIMIZER: 'adam'
+  LR_TYPE: 'multistep'
+  LR: 0.0005
+  LR_STEP: [80,100]
+  ERROR: 0.0001
+  RATIO: 0.7
+  LOSS:
+    TAU: 0.02
+    ALPHA: 1
+    BETA: 1
+    GAMMA: 1.0
+    NUM_NEGATIVES: 64
+
+
+
+TEST:
+  BATCH_SIZE_PER_GPU: 128
+  SHUFFLE: False
+  SAVE_WEIGHT: True
+
+
+
+MODEL:
+  NAME: 'TAG-AD'
+  INIT_WEIGHTS: True
+  NUM_LAYERS : 2
+  HIDDEN_CHANNELS: 256
+  HEADS: 8
+  DROPOUT: 0.3
+
+
+
