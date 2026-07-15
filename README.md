@@ -40,9 +40,9 @@ Install the required packages:
 ## Framework Overview
 
 <p align="center">
-  <a href="static/images/T-ADTG.png" target="_blank">
+  <a href="static/images/framework.png" target="_blank">
     <img
-      src="static/images/T-ADTG.png"
+      src="static/images/framework.png"
       width="100%"
       style="border: 2px solid rgb(201, 196, 196);"
     >
@@ -61,22 +61,6 @@ We evaluate `T-ADTG` on:
 
 
 
-
-
-
-A dataset is a directory with the following structure:
-  ```bash
-  $ tree data
-  NFTs_Dataset
-  ├── mapping
-  │   ├── nft_id_mapping
-  │   └── wallet_id_mapping
-  │
-  ├── collections.csv
-  └── opensea_nft_transactions.parquet
-  
-  
-  ```
 
 
 ## Baselines
@@ -101,18 +85,18 @@ A dataset is a directory with the following structure:
 
 
 ## Training
-To train `Drone-Guard` on a dataset, run:
+To test `T-ADTG` on a dataset, run:
 ```bash
  python  train.py \
       --cfg <config-file>  \
       --exp <experiment-name>  \
-      --gpu <experiment-name> 
+      --gpu <device-id> 
 ```  
- For example, to train `Drone-Guard` on Ped2:
+ For example, to test `T-ADTG` on Wikipedia:
 
 ```bash
 python train.py \
-    --cfg config/wikipedia.yaml # To Train model with both normal and pseudo anomalies data
+    --cfg src/config/wikipedia.yaml 
 ```
 
 ## Configuration
