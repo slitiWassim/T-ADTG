@@ -1,0 +1,13 @@
+einops
+mlflow
+mlflow_skinny
+numpy
+pandas
+PyYAML
+scikit_learn
+ssm
+torch==2.4.1
+torch_geometric==2.6.1
+torch_scatter
+tqdm
+yacs

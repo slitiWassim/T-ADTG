@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Detecting Suspicious Activity in the NFT Ecosystem using Temporal Graph Analysis">
+  <meta name="keywords" content="HSTforU, HSTforU">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png"
+          href="https://img.icons8.com/ios-filled/50/network.png">
+  <title>T-ADTG</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECQJZZNYSB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ECQJZZNYSB');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Time-Aware Self-Supervised Framework for Anomaly Detection in Temporal Graphs</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/wassim-sliti-72b080187/">Wassim Sliti</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/felixcuadradolatasa/">Félix Cuadrado</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/juancarlosduenas/">Juan Carlos Dueñas</a><sup></sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Real time systems and telematic services architecture Research Group</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Information Processing and Telecommunications Center (IPTC), Universidad Politécnica de Madrid, Av. Complutense, 30, Moncloa - Aravaca, 28040 Madrid, Spain</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/slitiWassim/T-ADTG"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://cedar-heu-project.eu/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-globe"></i>
+                  </span>
+                  <span>Project</span>
+                </a>
+              </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+             Anomaly detection in temporal graphs aims to identify fraudulent users, malicious transactions,
+and other irregular behavior as interaction networks evolve. Two practical realities constrain this
+task. Labeled anomalies are scarce and costly to obtain, and real-world graphs grow to scales
+where many detection methods become computationally infeasible. To address both constraints, we
+propose T-ADTG, a self-supervised framework that requires no anomaly labels and scales near-
+linearly with the number of interactions. T-ADTG treats time as a first-class signal throughout the
+detection pipeline rather than as an auxiliary feature. At the interaction level, Temporal Rotary
+Message Encoding embeds each timestamp directly into the propagated message through a magnitude-
+preserving rotation, while Similarity-Aware Message Aggregation weights neighbors by how similarly
+their behavior has evolved. At the node level, a gated memory module accumulates each node’s
+behavioral trajectory across interactions. A multi-level contrastive objective then enforces consistency
+between a node’s present, its past, and its neighborhood, and deviations from this consistency directly
+yield the anomaly score in a single forward pass. We evaluate T-ADTG on five benchmark datasets
+against fifteen baselines, obtaining the best mean AUROC on every dataset. Despite using no labels, it
+matches or exceeds supervised and semi-supervised methods, and remains effective on a 330K-node
+graph where several static and snapshot-based baselines exhaust memory. These results show that
+accurate, label-free anomaly detection at scale is achievable, precisely in the fraud and abuse settings
+where labels are hardest to obtain.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="">
+       <img src="./static/images/paper.png"  > 
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Framework Overview</h3>
+    <div class="columns is-centered">
+
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+
+            <img src="./static/images/framework.png" height="90%" > 
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+  <div class="container is-centered is-max-desktop">
+    <div class="columns is-centered">
+
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column is-centered">
+        <h2 class="title is-4">Temporal Rotary Message Encoding (TRME)</h2>
+        <div class="columns is-centered">
+          <div class="column content has-text-justified">
+            <p>llustration of <b>Temporal Rotary Message Encoding (TRME)</b>. Each edge message is partitioned into two-
+dimensional subspaces, and every subspace is rotated by an
+angle proportional to the interaction timestamp, embedding
+continuous-time information directly into the message geome-
+try before neighborhood aggregation.
+            </p>
+            <style>
+            .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;}
+            </style>
+
+           <img src="./static/images/TRME_.png" class="center-image">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Results</h3>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/normal.png" alt="Image 1">
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/normal2abnormal.png" alt="Image 2">
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure class="image">
+          <img src="./static/images/abnormal2normal.png" alt="Image 3">
+        </figure>
+      </div>
+    </div>
+
+    <div class="content has-text-justified">
+      <p>
+        Illustration of the impact of anomalous nodes on GNN-based representation learning: (a) a normal node connected to normal neighbors, yielding a reliable representation; (b) a normal node influenced by an anomalous neighbor, leading to representation contamination; and (c) an anomalous node surrounded by normal neighbors, resulting in a camouflaged representation that obscures anomalous behavior and reduces discriminative capability.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3">Results</h3>
+
+    <!-- First Row -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <img src="./static/images/wikipedia_auc_curve_std.png">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content has-text-centered">
+          <img src="./static/images/Mooc_AUROC_curve.png">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content has-text-centered">
+          <img src="./static/images/Bitcoin_Alpha_curve.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="content has-text-centered">
+          <img src="./static/images/Bitcoin_otc_curve.png">
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="content has-text-centered">
+          <img src="./static/images/Amazon_AUROC_curve.png">
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Mean ROC curves of <b>T-ADTG</b> on the five benchmark datasets, averaged over 10 runs.
+      Each panel reports the mean AUROC and its standard deviation.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Acknowledgements</h2>
+
+        <p>
+        This work was carried out within the STRAST Research Group at the Information Processing and Telecommunications Center (IPTC), Universidad Politécnica de Madrid, as part of the <a href="https://cedar-heu-project.eu/">CEDAR</a>  project, funded by the Horizon Europe Programme (Grant Agreement No. 101135577).         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        
+
+         <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+
+        <div class="content">
+          <img src="./static/images/UPM.png" height="100%" width="100%">
+          
+        </div>
+      </div>
+      <div class="column">
+
+        <div class="content">
+          <img src="./static/images/logo_iptc_sq_color.png" height="55%" width="55%">
+          
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>The paper has been submitted and is currently under review.</code></pre>
+  </div>
+</section>
+
+
+  
+  <div  class="content has-text-centered"> 
+         <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=230&t=n&d=TCmBAUEIrbJre5QRBm6XeYR8LXvHhPTAXNqKjcK3Go4'></script>
+  </div>    
+  
+
+</body>
+</html>

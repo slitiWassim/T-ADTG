@@ -1,0 +1,40 @@
+GPUS: [0]
+WORKERS: 16
+
+
+DATASET:
+  NAME: otc
+  ROOT: 'data'
+  NUM_NEIGHBORRS: [15,10]
+  ZERO_EDGE: False
+
+
+TRAIN:
+  BATCH_SIZE_PER_GPU: 128
+  EPOCH: 25
+  OPTIMIZER: 'adam'
+  LR_TYPE: 'multistep'
+  LR: 5e-4
+  LR_STEP: [80,100]
+  LOSS:
+    TAU: 0.02
+    ALPHA: 1
+    BETA: 1
+
+
+
+TEST:
+  BATCH_SIZE_PER_GPU: 128
+  SAVE_WEIGHT: True
+
+
+
+MODEL:
+  INIT_WEIGHTS: True
+  NUM_LAYERS : 2
+  HIDDEN_CHANNELS: 128
+  HEADS: 4
+  DROPOUT: 0.2
+
+
+
